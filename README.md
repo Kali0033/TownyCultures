@@ -1,41 +1,35 @@
-# TownyCultures
+# TownyReligions (TownyCultures)
 
 INTRODUCTION
+- TownyReligions is a fork of TownyCultures which only varies in using religions instead of cultures and also with the exclusion of Culture Channel.
 - TownyCultures is an add on plugin for Towny, which enables "cultures" on Towny servers.
  
 FEATURES
-- Each town has a 'culture' e.g. "Greek", "Celtic", "Roman", "Azurian" etc.
-- Each town culture is displayed on the Town screen.
-- Town residents can communicate with all other town residents of the same culture (regardless of nation), 
-  <br>using the Culture Channel: `/cc <message>`.
-- Town culture is fluid and dynamic. 
-  There is no central administrator for each culture.
-  <br>A new culture can be created by a mayor, using: `/c set <culture>`.
-  <br>The same command can be used to join an existing culture.
-- Nations do not create or specify culture in this way.
-  <br>Instead their culture is the sum of whichever cultures their component towns identify with, 
-  <br>and/or whichever culture(s) they might claim to be affiliated with.
-- Culture is important in war-time,
-  because although a town might be captured by an enemy nation,
-  <br>the residents can continue communicating with their friends in the same culture,
-  <br>using the Culture Channel: `/cc <message>`.
-- Culture can be shown on your dynmap' town popups.
+- Each town has a 'religion' e.g. "Hinduism", "Christianity", "Islam", "Taoism" etc.
+- Each town religion is displayed on the Town screen.
+- Town religion is fluid and dynamic. 
+  There is no central administrator for each religion.
+  <br>A new religion can be created by a mayor, using: `/c set <culture>`.
+  <br>The same command can be used to join an existing religion.
+- Nations do not create or specify religion in this way.
+  <br>Instead their religion is the sum of whichever cultures their component towns identify with, 
+  <br>and/or whichever religion(s) they might claim to be affiliated with.
+- Religion can be shown on your dynmap' town popups.
   <br>Add %culture% in your Dynmap-Towny config's InfoWindow.
-- Culture can be shown using the placeholder: %townycultures_culture%
+- Religion can be shown using the placeholder: %townycultures_culture%
 
 COMMANDS
 
     PLAYER
-    - `/cc <message>` - As a town resident, talk to others in the same culture
-    - `/c set culture` - As a mayor, have the town create or join a culture
+    - `/religion set religion` - As a mayor, have the town create or join a religion
     
     ADMIN
     - `/ca reload` - Reload the plugin configs & language files
-    - '/ca alltowns set culture <culture> - Set a culture for all towns
-    - '/ca town <town> set culture <culture> - Set a culture for 1 town
+    - '/ca alltowns set religion <religion> - Set a culture for all towns
+    - '/ca town <town> set religion <religion> - Set a culture for 1 town
       
 INSTALLATION STEPS
-1. Download the TownyCultures jar file here: https://github.com/TownyAdvanced/TownyCultures/releases
+1. Compile Jar file from source.
 2. Drop the jar file into your normal plugins folder.
 3. Stop your server.
 4. Start your server.
