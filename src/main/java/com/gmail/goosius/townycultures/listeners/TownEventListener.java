@@ -22,6 +22,6 @@ public class TownEventListener implements Listener {
 			if (TownMetaDataController.hasTownCulture(event.getTown()))
 				event.addLines(Arrays.asList(Translation.of("status_town_culture", StringMgmt.capitalize(TownMetaDataController.getTownCulture(event.getTown())))));
 			else
-				event.addLines(Arrays.asList(Translation.of("status_town_culture", "/culture set [culture]")));
+				event.addLines(Arrays.asList(Translation.of("status_town_culture", "/religion set [religion]")));
 	}
 }

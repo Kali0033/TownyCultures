@@ -1,7 +1,6 @@
 package com.gmail.goosius.townycultures;
 
 import com.gmail.goosius.townycultures.command.*;
-import com.gmail.goosius.townycultures.listeners.TownyDynmapListener;
 import com.gmail.goosius.townycultures.metadata.TownMetaDataController;
 import com.gmail.goosius.townycultures.settings.TownyCulturesSettings;
 import org.bukkit.Bukkit;
@@ -22,7 +21,6 @@ public class TownyCultures extends JavaPlugin {
 	private static TownyCultures plugin;
 	public static String prefix = "[TownyCultures] ";
 	private static Version requiredTownyVersion = Version.fromString("0.97.0.16");
-	private static boolean dynmapTowny = false;
 
 	public static TownyCultures getTownyCultures() {
 		return plugin;
@@ -69,11 +67,7 @@ public class TownyCultures extends JavaPlugin {
             new TownyCulturesPlaceholderExpansion(this).register();
             info("Found PlaceholderAPI. Enabling support...");
 		}
-		
-		test = getServer().getPluginManager().getPlugin("Dynmap-Towny");
-		if (test != null)
-			dynmapTowny = true;
-		
+
 	}
 
 	@Override
@@ -97,14 +91,11 @@ public class TownyCultures extends JavaPlugin {
 		PluginManager pm = Bukkit.getServer().getPluginManager();
 		pm.registerEvents(new TownEventListener(), this);
 		pm.registerEvents(new NationEventListener(), this);
-		if (dynmapTowny)
-			pm.registerEvents(new TownyDynmapListener(), this);
 	}
 	
 	private void registerCommands() {
-		getCommand("culture").setExecutor(new CultureCommand());
+		getCommand("religion").setExecutor(new CultureCommand());
 		getCommand("cultureadmin").setExecutor(new CultureAdminCommand());
-		getCommand("cc").setExecutor(new CultureChatCommand());
 	}
 
 	private void printSickASCIIArt() {

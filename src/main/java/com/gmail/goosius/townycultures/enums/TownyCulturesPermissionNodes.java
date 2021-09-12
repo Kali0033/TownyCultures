@@ -8,7 +8,7 @@ package com.gmail.goosius.townycultures.enums;
 public enum TownyCulturesPermissionNodes {
 
 	// Command Nodes:
-	TOWNYCULTURES_COMMAND_SET_TOWN_CULTURE("townycultures.set_town_culture"),
+	TOWNYCULTURES_COMMAND_SET_TOWN_CULTURE("townycultures.set_town_religion"),
 	TOWNYCULTURES_COMMAND_ADMIN("townycultures.admin.*"),
 	TOWNYCULTURES_COMMAND_ADMIN_RELOAD("townycultures.admin.reload"),
 	TOWNYCULTURES_COMMAND_ADMIN_SET_ALL_TOWN_CULTURES("townycultures.admin.alltowns"),

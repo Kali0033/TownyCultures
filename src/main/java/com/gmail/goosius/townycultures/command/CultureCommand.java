@@ -38,8 +38,8 @@ public class CultureCommand implements CommandExecutor, TabCompleter {
 	}
 
 	private void showCultureHelp(CommandSender sender) {
-		sender.sendMessage(ChatTools.formatTitle("/culture"));
-		sender.sendMessage(ChatTools.formatCommand("Eg", "/c set", "[culture]", ""));
+		sender.sendMessage(ChatTools.formatTitle("/religion"));
+		sender.sendMessage(ChatTools.formatCommand("Eg", "/religion set ", "[religion]", ""));
 	}
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {

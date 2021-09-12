@@ -1,8 +1,8 @@
-name: TownyCultures
+name: TownyReligions
 version: 0.03
 language: english
-author: Goosius
-website: 'http://townyadvanced.github.io/'
+author: Kali
+website: 'https://github.com/Kali0033/TownyCultures'
 description: >
     Language file for all game messages.  Do not alter this file.
     If you wish to change any of the entries, make a copy named something else.
@@ -24,27 +24,24 @@ description: >
 # Rose = &c, LightPurple = &d, Yellow = &e, White = &f
 
 #basics
-plugin_prefix: '&f[&6TownyCultures&f] '
+plugin_prefix: '&f[&6TownyReligions&f] '
 msg_err_command_disable: '&cYou don''t have enough permissions for that command.'
 
 #town screen
-status_town_culture: '&2Culture: &a%s'
+status_town_culture: '&2Religion: &a%s'
 
 #culture setting
-msg_town_culture_set: '&bTown culture set to %s'
-msg_culture_removed: '&bTown culture removed.'
-msg_culture_removed_all_towns: '&bTown culture removed from all towns.'
-msg_err_invalid_characters: '&cInvalid characters used, unable to set culture.'
-msg_err_culture_name_too_long: '&cCulture name longer than character limit (%d), unable to set culture.'
+msg_town_culture_set: '&bTown religion set to %s'
+msg_culture_removed: '&bTown religion removed.'
+msg_culture_removed_all_towns: '&bTown religion removed from all towns.'
+msg_err_invalid_characters: '&cInvalid characters used, unable to set religion.'
+msg_err_culture_name_too_long: '&cReligion name longer than character limit (%d), unable to set religion.'
 
-
-#chat
-culture_chat_message: '&f[&5CC&f] &f[&6%s&f] %s: &d%s'
 
 #admin
 admin_help_1: 'Reload the config and language file.'
 config_and_lang_file_reloaded_successfully: 'Config and Language file reloaded successfully.'
 config_and_lang_file_could_not_be_loaded: 'Reload unsuccessful. See console for details.'
-msg_all_town_cultures_set: '&bCulture of all towns set to %s'
-msg_specific_town_cultures_set: '&bCulture of town %s set to %s'
+msg_all_town_cultures_set: '&bReligion of all towns set to %s'
+msg_specific_town_cultures_set: '&bReligion of town %s set to %s'
 msg_err_town_not_registered: '&cTown %s is not registered.'
